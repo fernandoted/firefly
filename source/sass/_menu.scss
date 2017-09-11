@@ -7,25 +7,17 @@
 }
 
 .menu {
-	display: none;
-	-webkit-order: 2;
-	order: 2;
+	height: 30px;
+	.logo-wrapper, .user-icon-wrapper, .search-icon-wrapper {
+		display: none;
+	}
 	.menu-list {
-		-webkit-order: 2;
-		order: 2;
-		// display: -webkit-flex;
-		// display: flex;
-		// -webkit-flex-direction: row;
-		// flex-direction: row;
-		// -webkit-justify-content: space-between;
-		// justify-content: space-between;
-
 		.menu-item {
 				padding: 0 10px;
 				display: inline-block;
 				text-align: center;
 			.menu-link {
-				font-size: .750rem;
+				font-size: .8rem;
 				color: #FFFFFF;
 				text-transform: uppercase;
 				&:hover {
@@ -36,35 +28,32 @@
 		}
 	}
 }
-.mobile-menu {
-	display: block;
-	background: #1f1f1f;
-	display: block;
-	padding: 10px;
-	.menu-item {
-		padding: 0 10px;
-		display: inline-block;
-		text-align: center;
-		.menu-link {
-			font-size: .9rem;
-			color: #FFFFFF;
-			text-transform: uppercase;
-			&:hover {
-				@include soft-hover;
-				color: $green;
-			}
-		}
-	}
-}
 
 //////////////////////////////////
 ////////// DESKTOP ///////////////
 //////////////////////////////////
 @media screen and (min-width: 768px) {
 	.menu {
-		display: block;
-	}
-	.mobile-menu {
-		display: none;
+		height: 80px;
+		width: 80%;
+		display: -webkit-flex;
+		display: flex;
+		-webkit-flex-direction: row;
+		flex-direction: row;
+		-webkit-justify-content: center;
+		justify-content: center;
+		-webkit-align-items: center;
+		align-items: center;
+		.logo-wrapper, .user-icon-wrapper, .search-icon-wrapper {
+			display: block;
+		}
+		.user-icon-wrapper, .search-icon-wrapper {
+			font-size: 1.5rem;
+			padding: 0 10px;
+			&:hover {
+				@include soft-hover;
+				opacity: .6;
+			}
+		}
 	}
 }
