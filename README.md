@@ -13,7 +13,7 @@ O header é um ponto interessante deste exemplo. São diversos os artigos hoje a
 
 Neste exemplo o menu na versão smartphone é o chamado "horizontal scrolling menu", onde o menu é disposto em linha, assim como na versão desktop, e o que não cabe na tela e alcançado deslizando-se (touch) essa linha. Um bom exemplo é o aplicativo da [Folha de São Paulo](http://www.folha.uol.com.br/).
 
-![desktop menu](/readme-files/menu-desktop.png)
+![desktop menu](/readme-files/menu-desktop.jpg)
 menu versão desktop
 
 ![desktop menu](/readme-files/menu-smart.png)
