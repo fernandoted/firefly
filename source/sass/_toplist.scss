@@ -154,7 +154,7 @@
 		-webkit-align-items: center;
 		align-items: center;
 		.album-pic-wrapper {
-			width: 70px;
+			width: 30%;
 			margin-right: 10px;
 			.album-pic {
 				max-width: 100%;
@@ -169,11 +169,16 @@
 			justify-content: space-between;
 			-webkit-flex-direction: column;
 			flex-direction: column;
+			.music-title {
+				font-size: 1rem;
+			}
 			.music-author {
+				font-size: .9rem;
 				color: $dark-gray;
 			}
 			.album-year {
 				color: $soft-gray;
+				font-size: .9rem;
 				font-weight: 100;
 			}
 		}
