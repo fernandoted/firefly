@@ -1,0 +1,13 @@
+
+
+
+@mixin soft-shadow {
+	-webkit-box-shadow: 0px -1px 20px -5px rgba(0,0,0,0.4);
+	-moz-box-shadow: 0px -1px 20px -5px rgba(0,0,0,0.4);
+	box-shadow: 0px -1px 20px -5px rgba(0,0,0,0.4);
+}
+
+@mixin soft-hover {
+	-webkit-transition: ease-in-out .2s;
+	transition: ease-in-out .2s;
+}

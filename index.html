@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Documento sem título</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <link href="dist/css/style.css" rel="stylesheet" type="text/css">
+    <script src="https://use.fontawesome.com/2ff974d349.js"></script>
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>-->
+</head>
+
+<body>
+
+    <div class="container-all">
+        <header class="header-container">
+            <div class="banner-wrapper">
+                <img src="dist/img/banner.jpg" alt="banner">
+            </div>
+            <div class="topbar">
+                <div class="logo-wrapper">
+                    <img class="logo" src="dist/img/logo.jpg" alt="logo vagalume">
+                </div>
+                <nav class="menu">
+                    <ul class="menu-list scroll">
+                        <li class="menu-item"><a class="menu-link" href="#">vagalume</a></li>
+                        <li class="menu-item"><a class="menu-link" href="#">top 100</a></li>
+                        <li class="menu-item"><a class="menu-link" href="#">estilos</a></li>
+                        <li class="menu-item"><a class="menu-link" href="#">a-z</a></li>
+                        <li class="menu-item"><a class="menu-link" href="#">ouvir música</a></li>
+                        <li class="menu-item"><a class="menu-link" href="#">news</a></li>
+                        <li class="menu-item"><a class="menu-link" href="#">videos</a></li>
+                        <li class="menu-item"><a class="menu-link" href="#">especiais</a></li>
+                        <li class="menu-item"><a class="menu-link" href="#">vagalume.fm</a></li>
+                    </ul>
+                </nav>
+                <div class="user-icon-wrapper">
+                    <i class="fa fa-user-circle-o user-icon"></i>
+                </div>
+                <div class="search-icon-wrapper">
+                    <i class="fa fa-search search-icon"></i>
+                </div>
+            </div> <!-- topbar -->
+            <nav class="menu mobile-menu">
+                <ul class="menu-list scroll">
+                    <li class="menu-item"><a class="menu-link" href="#">vagalume</a></li>
+                    <li class="menu-item"><a class="menu-link" href="#">top 100</a></li>
+                    <li class="menu-item"><a class="menu-link" href="#">estilos</a></li>
+                    <li class="menu-item"><a class="menu-link" href="#">a-z</a></li>
+                    <li class="menu-item"><a class="menu-link" href="#">ouvir música</a></li>
+                    <li class="menu-item"><a class="menu-link" href="#">news</a></li>
+                    <li class="menu-item"><a class="menu-link" href="#">videos</a></li>
+                    <li class="menu-item"><a class="menu-link" href="#">especiais</a></li>
+                    <li class="menu-item"><a class="menu-link" href="#">vagalume.fm</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="content">
+            <!-- TOPLIST MUSICS -->
+            <button class="tablink" onclick="toplistTab('musicas', this, 'transparent')" id="defaultOpen">músicas</button>
+            <button class="tablink" onclick="toplistTab('artists', this, 'transparent')">artistas</button>
+            <button class="tablink" onclick="toplistTab('albuns', this, 'transparent')">álbuns</button>
+
+            <div id="musicas" class="tabcontent toplist-box">
+                <div class="toplist-header music-list-bg">
+                    <h2 class="toplist-title">músicas</h2>
+                    <hr class="header-separator">
+                    <p class="top-ordination">1º</p>
+                    <div class="arrow-wrapper">
+                        <img class="arrow" src="dist/img/arrow-up-white.png" alt="">
+                    </div>
+                    <h3 class="top-music-title">Shape of You</h3>
+                    <h4 class="top-music-author">Ed Sheeran</h4>
+                </div>
+                <!-- second -->
+                <div class="music-list-wrapper">
+                    <div class="ordination-wrapper">
+                        <p class="ordination">2º</p>
+                        <div class="arrow-wrapper">
+                            <img class="arrow" src="dist/img/arrow-up-green.png" alt="">
+                        </div>
+                    </div>
+                    <div class="music-name-wrapper">
+                        <h3 class="music-title">Despacito (Feat. Dady Yankee)</h3>
+                        <h4 class="music-author">Luis Fonsi</h4>
+                    </div>
+                    <div class="like-wrapper">
+                        <i class="heart fa fa-heart-o"></i>
+                    </div>
+                </div>
+                <hr class="list-separator">
+                <!-- third -->
+                <div class="music-list-wrapper">
+                    <div class="ordination-wrapper">
+                        <p class="ordination">3º</p>
+                        <div class="arrow-wrapper">
+                            <img class="arrow" src="dist/img/arrow-up-green.png" alt="">
+                        </div>
+                    </div>
+                    <div class="music-name-wrapper">
+                        <h3 class="music-title">Swish Swish (Feat. Nicki Minaj)</h3>
+                        <h4 class="music-author">Katy Perry</h4>
+                    </div>
+                    <div class="like-wrapper">
+                        <i class="heart fa fa-heart-o"></i>
+                    </div>
+                </div>
+                <hr class="list-separator">
+                <!-- forth -->
+                <div class="music-list-wrapper">
+                    <div class="ordination-wrapper">
+                        <p class="ordination">4º</p>
+                        <div class="arrow-wrapper">
+                            <img class="arrow" src="dist/img/arrow-up-green.png" alt="">
+                        </div>
+                    </div>
+                    <div class="music-name-wrapper">
+                        <h3 class="music-title">Hear Me Now (Feat. Zeeba, Bruno Martini)</h3>
+                        <h4 class="music-author">Alok</h4>
+                    </div>
+                    <div class="like-wrapper">
+                        <i class="heart fa fa-heart-o"></i>
+                    </div>
+                </div>
+                <hr class="list-separator">
+                <!-- fifth -->
+                <div class="music-list-wrapper">
+                    <div class="ordination-wrapper">
+                        <p class="ordination">5º</p>
+                        <div class="arrow-wrapper">
+                            <img class="arrow" src="dist/img/arrow-up-green.png" alt="">
+                        </div>
+                    </div>
+                    <div class="music-name-wrapper">
+                        <h3 class="music-title">There's Nothing Holdin' Me Back</h3>
+                        <h4 class="music-author">Shawn Mendes</h4>
+                    </div>
+                    <div class="like-wrapper">
+                        <i class="heart fa fa-heart-o"></i>
+                    </div>
+                </div>
+                <div class="button-wrapper">
+                    <button class="button-expand">ver o top 100 músicas</button>
+                </div>
+            </div> <!-- toplist-box -->
+
+            <!-- TOPLIST ARTIST -->
+            <div id="artists" class="tabcontent toplist-box">
+                <!-- first - header -->
+                <div class="toplist-header artist-list-bg">
+                    <h2 class="toplist-title">artistas</h2>
+                    <hr class="header-separator">
+                    <p class="top-ordination">1º</p>
+                    <div class="arrow-wrapper">
+                        <img class="arrow" src="dist/img/arrow-up-white.png" alt="">
+                    </div>
+                    <h3 class="top-music-title">Twenty One Pilots</h3>
+                </div>
+                <!-- second -->
+                <div class="music-list-wrapper">
+                    <div class="ordination-wrapper">
+                        <p class="ordination">2º</p>
+                        <div class="arrow-wrapper">
+                            <img class="arrow" src="dist/img/arrow-up-green.png" alt="">
+                        </div>
+                    </div>
+                    <div class="artist-name-wrapper">
+                        <div class="artist-pic-wrapper">
+                            <img src="dist/img/luis-fonsi.jpg" alt="artista número dois" class="artist-pic">
+                        </div>
+                        <h4 class="music-author">Luis Fonsi</h4>
+                    </div>
+                    <div class="like-wrapper">
+                        <i class="heart fa fa-heart-o"></i>
+                    </div>
+                </div>
+                <hr class="list-separator">
+                <!-- third -->
+                <div class="music-list-wrapper">
+                    <div class="ordination-wrapper">
+                        <p class="ordination">3º</p>
+                        <div class="arrow-wrapper">
+                            <img class="arrow" src="dist/img/arrow-up-green.png" alt="">
+                        </div>
+                    </div>
+                    <div class="artist-name-wrapper">
+                        <div class="artist-pic-wrapper">
+                            <img src="dist/img/bieber.jpg" alt="artista número três" class="artist-pic">
+                        </div>
+                        <h3 class="music-title">Justin Bieber</h3>
+                    </div>
+                    <div class="like-wrapper">
+                        <i class="heart fa fa-heart-o"></i>
+                    </div>
+                </div>
+                <hr class="list-separator">
+                <!-- forth -->
+                <div class="music-list-wrapper">
+                    <div class="ordination-wrapper">
+                        <p class="ordination">4º</p>
+                        <div class="arrow-wrapper">
+                            <img class="arrow" src="dist/img/arrow-up-green.png" alt="">
+                        </div>
+                    </div>
+                    <div class="artist-name-wrapper">
+                        <div class="artist-pic-wrapper">
+                            <img src="dist/img/eminen.jpg" alt="artista número quatro" class="artist-pic">
+                        </div>
+                        <h3 class="music-title">Eminem</h3>
+                    </div>
+                    <div class="like-wrapper">
+                        <i class="heart fa fa-heart-o"></i>
+                    </div>
+                </div>
+                <hr class="list-separator">
+                <!-- fifth -->
+                <div class="music-list-wrapper">
+                    <div class="ordination-wrapper">
+                        <p class="ordination">5º</p>
+                        <div class="arrow-wrapper">
+                            <img class="arrow" src="dist/img/arrow-up-green.png" alt="">
+                        </div>
+                    </div>
+                    <div class="artist-name-wrapper">
+                        <div class="artist-pic-wrapper">
+                            <img src="dist/img/haikaiss.jpg" alt="artista número cinco" class="artist-pic">
+                        </div>
+                        <h3 class="music-title">Haikaiss</h3>
+                    </div>
+                    <div class="like-wrapper">
+                        <i class="heart fa fa-heart-o"></i>
+                    </div>
+                </div>
+                <div class="button-wrapper">
+                    <button class="button-expand">ver o top 100 artistas</button>
+                </div>
+            </div>
+
+            <!-- TOPLIST ALBUNS -->
+            <div id="albuns" class="tabcontent toplist-box">
+                <!-- first - header -->
+                <div class="toplist-header albuns-list-bg">
+                    <h2 class="toplist-title">álbuns</h2>
+                    <hr class="header-separator">
+                    <p class="top-ordination">1º</p>
+                    <div class="arrow-wrapper">
+                        <img class="arrow" src="dist/img/arrow-up-white.png" alt="">
+                    </div>
+                    <h3 class="top-music-title">The Ultimate Collection</h3>
+                    <h4 class="top-music-author">Michael Jackson</h4>
+                </div>
+                <!-- second -->
+                <div class="music-list-wrapper">
+                    <div class="ordination-wrapper">
+                        <p class="ordination">2º</p>
+                        <div class="arrow-wrapper">
+                            <img class="arrow" src="dist/img/arrow-up-green.png" alt="">
+                        </div>
+                    </div>
+                    <div class="album-name-wrapper">
+                        <div class="album-pic-wrapper">
+                            <img src="dist/img/album-divide.jpg" alt="álbum número dois" class="album-pic">
+                        </div>
+                        <div class="album-text-wrapper">
+                            <h3 class="music-title">Divide</h3>
+                            <h4 class="music-author">Ed Sheeran</h4>
+                            <p class="album-year">2017</p>
+                        </div>
+                    </div>
+                    <div class="like-wrapper">
+                        <i class="heart fa fa-heart-o"></i>
+                    </div>
+                </div>
+                <hr class="list-separator">
+                <!-- third -->
+                <div class="music-list-wrapper">
+                    <div class="ordination-wrapper">
+                        <p class="ordination">3º</p>
+                        <div class="arrow-wrapper">
+                            <img class="arrow" src="dist/img/arrow-up-green.png" alt="">
+                        </div>
+                    </div>
+                    <div class="album-name-wrapper">
+                        <div class="album-pic-wrapper">
+                            <img src="dist/img/album-illuminate.jpg" alt="álbum número três" class="album-pic">
+                        </div>
+                        <div class="album-text-wrapper">
+                            <h3 class="music-title">Illuminate</h3>
+                            <h4 class="music-author">Shawn Mendes</h4>
+                            <p class="album-year">2016</p>
+                        </div>
+                    </div>
+                    <div class="like-wrapper">
+                        <i class="heart fa fa-heart-o"></i>
+                    </div>
+                </div>
+                <hr class="list-separator">
+                <!-- forth -->
+                <div class="music-list-wrapper">
+                    <div class="ordination-wrapper">
+                        <p class="ordination">4º</p>
+                        <div class="arrow-wrapper">
+                            <img class="arrow" src="dist/img/arrow-up-green.png" alt="">
+                        </div>
+                    </div>
+                    <div class="album-name-wrapper">
+                        <div class="album-pic-wrapper">
+                            <img src="dist/img/album-evolve.jpg" alt="álbum número quatro" class="album-pic">
+                        </div>
+                        <div class="album-text-wrapper">
+                            <h3 class="music-title">Evolve</h3>
+                            <h4 class="music-author">Imagine Dragons</h4>
+                            <p class="album-year">2017</p>
+                        </div>
+                    </div>
+                    <div class="like-wrapper">
+                        <i class="heart fa fa-heart-o"></i>
+                    </div>
+                </div>
+                <hr class="list-separator">
+                <!-- fifth -->
+                <div class="music-list-wrapper">
+                    <div class="ordination-wrapper">
+                        <p class="ordination">5º</p>
+                        <div class="arrow-wrapper">
+                            <img class="arrow" src="dist/img/arrow-up-green.png" alt="">
+                        </div>
+                    </div>
+                    <div class="album-name-wrapper">
+                        <div class="album-pic-wrapper">
+                            <img src="dist/img/album-witness.jpg" alt="álbum número cinco" class="album-pic">
+                        </div>
+                        <div class="album-text-wrapper">
+                            <h3 class="music-title">Witness</h3>
+                            <h4 class="music-author">Katy Perry</h4>
+                            <p class="album-year">2017</p>
+                        </div>
+                    </div>
+                    <div class="like-wrapper">
+                        <i class="heart fa fa-heart-o"></i>
+                    </div>
+                </div>
+                <div class="button-wrapper">
+                    <button class="button-expand">ver o top 100 álbuns</button>
+                </div>
+            </div>
+        </section>
+    </div> <!-- container-all -->
+
+    <script src="dist/js/jquery.min.js"></script>
+    <script src="dist/js/bootstrap.min.js"></script>
+    <script src="dist/js/app.js"></script>
+
+    <script>
+        function toplistTab(listName,elmnt,color) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+            tabcontent[i].style.display = "block";
+        }
+        tablinks = document.getElementsByClassName("tablink");
+        for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].style.backgroundColor = "";
+        }
+        document.getElementById(listName).style.display = "block";
+        elmnt.style.backgroundColor = color;
+
+        }
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+    </script>
+
+</body>
+
+</html>

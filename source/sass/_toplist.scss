@@ -1,0 +1,255 @@
+
+
+
+// .toplist-box {
+// 	width: 32%;
+// 	background-color: white;
+// 	@include soft-shadow;
+// }
+.tablink {
+	display: block;
+    background-color: transparent;
+    color: white;
+    text-transform: uppercase;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 10px;
+    font-size: .8rem;
+    margin-bottom: -45px;
+    z-index: 999;
+}
+
+.tablink:hover {
+    background-color: rgba(0,0,0,0.2);
+}
+
+/* Style the tab content */
+.tabcontent {
+    color: white;
+    display: none;
+    // padding: 50px;
+    // text-align: center;
+}
+
+#musicas, #artists, #albuns {
+	width: 100%;
+	float: none;
+	margin-bottom: -50px;
+	background-color: white;
+	@include soft-shadow;
+}
+
+.music-list-bg {
+	background: url(../../dist/img/ed-sheeran.jpg) no-repeat;
+	background-size: cover;
+}
+
+.artist-list-bg {
+	background: url(../../dist/img/twenty-one-pilots.jpg) no-repeat;
+	background-size: cover;
+}
+
+.toplist-header {
+	color: white;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	height: 160px;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-webkit-flex-direction: column;
+	flex-direction: column;
+	-webkit-align-items: center;
+	align-items: center;
+	.toplist-title {
+		display: none;
+		font-size: 1rem;
+		text-transform: uppercase;
+		color: $green;
+		padding-bottom: 10px;
+	}
+	.header-separator {
+		width: 90%;
+		border: 1px solid #FFF;
+		opacity: .2;
+		margin-top: 20px;
+	}
+	.top-ordination {
+		font-size: 2.5rem;
+		font-weight: bold;
+	}
+	.arrow-wrapper {
+		width: 25px;
+		.arrow {
+			width: 100%;
+		}
+	}
+	.top-music-title {
+		font-size: 1.750rem;
+		color: $green;
+	}
+}
+
+.music-list-wrapper {
+	color: $blue-text;
+	height: 110px;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-webkit-align-items: center;
+	align-items: center;
+	.ordination-wrapper {
+		width: 20%;
+		display: -webkit-flex;
+		display: flex;
+		-webkit-flex-wrap: wrap;
+		flex-wrap: wrap;
+		-webkit-flex-direction: column;
+		flex-direction: column;
+		-webkit-align-items: center;
+		align-items: center;
+		.ordination {
+			font-size: 2rem;
+			font-weight: bold;
+			line-height: 1.8rem;
+		}
+		.arrow-wrapper {
+			width: 20px;
+			.arrow {
+				width: 100%;
+			}
+		}
+	}
+	.music-name-wrapper {
+		width: 60%;
+		// padding: 0 20px;
+		.music-title {
+			font-size: 1rem;
+		}
+		.music-author {
+			color: $dark-gray;
+		}
+	}
+	.artist-name-wrapper {
+		color: $blue-text;
+		width: 60%;
+		display: -webkit-flex;
+		display: flex;
+		-webkit-flex-wrap: wrap;
+		flex-wrap: wrap;
+		-webkit-align-items: center;
+		align-items: center;
+		.artist-pic-wrapper {
+			width: 25%;
+			margin-right: 10px;
+			.artist-pic {
+				width: 100%;
+				border-radius: 30px;
+			}
+		}
+	}
+	.album-name-wrapper {
+		width: 60%;
+		display: -webkit-flex;
+		display: flex;
+		-webkit-flex-wrap: wrap;
+		flex-wrap: wrap;
+		-webkit-align-items: center;
+		align-items: center;
+		.album-pic-wrapper {
+			width: 70px;
+			margin-right: 10px;
+			.album-pic {
+				max-width: 100%;
+			}
+		}
+		.album-text-wrapper {
+			display: -webkit-flex;
+			display: flex;
+			-webkit-flex-wrap: wrap;
+			flex-wrap: wrap;
+			-webkit-justify-content: space-between;
+			justify-content: space-between;
+			-webkit-flex-direction: column;
+			flex-direction: column;
+			.music-author {
+				color: $dark-gray;
+			}
+			.album-year {
+				color: $soft-gray;
+				font-weight: 100;
+			}
+		}
+	}
+	.like-wrapper {
+		width: 20%;
+		text-align: center;
+		.heart {
+			font-size: 1.5rem;
+			color: red;
+		}
+	}
+}
+
+.toplist-box {
+	.button-wrapper {
+		width: 100%;
+		padding-bottom: 18px;
+		display: -webkit-flex;
+		display: flex;
+		-webkit-justify-content: center;
+		justify-content: center;
+		.button-expand {
+			cursor: pointer;
+			padding: 10px 0;
+			width: 90%;
+			background: $blue;
+			text-transform: uppercase;
+			font-size: 1rem;
+			color: white;
+			text-align: center;
+			font-weight: bold;
+			border-radius: 3px;
+			&:hover {
+				background: $dark-blue;
+				@include soft-hover;
+				@include soft-shadow;
+			}
+		}
+	}
+}
+
+.list-separator {
+	border: 1px solid #EAEBEE;
+	margin: 0 20px;
+}
+
+//////////////////////////////////
+////////// DESKTOP ///////////////
+//////////////////////////////////
+@media screen and (min-width: 768px) {
+	.tabcontent {
+		display: block;
+	}
+	#musicas, #artists, #albuns {
+		width: 32%;
+		float: left;
+		margin-bottom: -50px;
+	}
+	.tablink {
+		display: none;
+	}
+	.toplist-header {
+		.toplist-title {
+			display: block;
+		}
+		.header-separator {
+			margin-top: 0;
+		}
+	}
+}
+

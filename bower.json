@@ -1,0 +1,22 @@
+{
+  "name": "firefly",
+  "description": "test for vagalume, the most popular brazilian website lyrics",
+  "main": "index.js",
+  "authors": [
+    "Fernando Ted <fernandoted@icloud.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "lyrics",
+    "flexbox",
+    "vagalume"
+  ],
+  "homepage": "https://github.com/fernandoted/firefly",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

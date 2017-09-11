@@ -1,0 +1,70 @@
+
+.scroll {
+	overflow: auto;
+	white-space: nowrap;
+	-webkit-overflow-scrolling: touch;
+	-ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
+.menu {
+	display: none;
+	-webkit-order: 2;
+	order: 2;
+	.menu-list {
+		-webkit-order: 2;
+		order: 2;
+		// display: -webkit-flex;
+		// display: flex;
+		// -webkit-flex-direction: row;
+		// flex-direction: row;
+		// -webkit-justify-content: space-between;
+		// justify-content: space-between;
+
+		.menu-item {
+				padding: 0 10px;
+				display: inline-block;
+				text-align: center;
+			.menu-link {
+				font-size: .750rem;
+				color: #FFFFFF;
+				text-transform: uppercase;
+				&:hover {
+					@include soft-hover;
+					color: $green;
+				}
+			}
+		}
+	}
+}
+.mobile-menu {
+	display: block;
+	background: #1f1f1f;
+	display: block;
+	padding: 10px;
+	.menu-item {
+		padding: 0 10px;
+		display: inline-block;
+		text-align: center;
+		.menu-link {
+			font-size: .9rem;
+			color: #FFFFFF;
+			text-transform: uppercase;
+			&:hover {
+				@include soft-hover;
+				color: $green;
+			}
+		}
+	}
+}
+
+//////////////////////////////////
+////////// DESKTOP ///////////////
+//////////////////////////////////
+@media screen and (min-width: 768px) {
+	.menu {
+		display: block;
+	}
+	.mobile-menu {
+		display: none;
+	}
+}

@@ -1,0 +1,29 @@
+{
+  "name": "firefly",
+  "version": "1.0.0",
+  "description": "test for vagalume, the most popular brazilian website lyrics",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fernandoted/firefly.git"
+  },
+  "keywords": [
+    "lyrics",
+    "flexbox",
+    "vagalume"
+  ],
+  "author": "Fernando Ted <fernandoted@icloud.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fernandoted/firefly/issues"
+  },
+  "homepage": "https://github.com/fernandoted/firefly#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-notify": "^3.0.0",
+    "gulp-sass": "^3.1.0"
+  }
+}

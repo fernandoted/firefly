@@ -1,0 +1,77 @@
+
+
+
+.header-container {
+	background: #1f1f1f;
+	color: white;
+}
+
+.banner-wrapper {
+	display: none;
+}
+
+.topbar {
+	padding: 0 20px;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-webkit-justify-content: space-between;
+	justify-content: space-between;
+	-webkit-align-items: center;
+	align-items: center;
+
+	.user-icon-wrapper {
+		-webkit-order: -1;
+		order: -1;
+		.user-icon {
+			font-size: 1.5rem;
+		}
+	}
+	.search-icon-wrapper {
+		-webkit-order: 1;
+		order: 1;
+		.search-icon {
+			font-size: 1.5rem;
+		}
+	}
+}
+
+//////////////////////////////////
+////////// DESKTOP ///////////////
+//////////////////////////////////
+@media screen and (min-width: 1200px) {
+	.banner-wrapper {
+		display: -webkit-flex;
+		display: flex;
+		-webkit-justify-content: center;
+		justify-content: center;
+		width: 100%;
+		padding-top: 10px;
+		.banner {
+
+		}
+	}
+	.topbar {
+		padding: 0;
+		-webkit-justify-content: center;
+		justify-content: center;
+		.user-icon-wrapper {
+			-webkit-order: 3;
+			order: 3;
+		}
+		.user-icon, .search-icon {
+			// font-size: 1.250rem;
+			padding: 0 10px;
+			&:hover {
+				@include soft-hover;
+				opacity: .6;
+			}
+		}
+		
+		.search-icon-wrapper {
+			-webkit-order: 4;
+			order: 4;
+		}
+	}
+}
