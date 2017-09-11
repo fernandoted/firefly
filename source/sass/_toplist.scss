@@ -149,12 +149,12 @@
 		width: 60%;
 		display: -webkit-flex;
 		display: flex;
-		-webkit-flex-wrap: wrap;
-		flex-wrap: wrap;
+		// -webkit-flex-wrap: wrap;
+		// flex-wrap: wrap;
 		-webkit-align-items: center;
 		align-items: center;
 		.album-pic-wrapper {
-			width: 30%;
+			max-width: 30%;
 			margin-right: 10px;
 			.album-pic {
 				max-width: 100%;
