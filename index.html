@@ -12,8 +12,6 @@
     <meta name="author" content="">
     <link href="dist/css/style.css" rel="stylesheet" type="text/css">
     <script src="https://use.fontawesome.com/2ff974d349.js"></script>
-    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>-->
 </head>
 
 <body>
@@ -353,26 +351,6 @@
     <script src="dist/js/jquery.min.js"></script>
     <script src="dist/js/bootstrap.min.js"></script>
     <script src="dist/js/app.js"></script>
-
-    <script>
-        function toplistTab(listName,elmnt,color) {
-            var i, tabcontent, tablinks;
-            tabcontent = document.getElementsByClassName("tabcontent");
-            for (i = 0; i < tabcontent.length; i++) {
-            tabcontent[i].style.display = "none";
-            tabcontent[i].style.display = "block";
-        }
-        tablinks = document.getElementsByClassName("tablink");
-        for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].style.backgroundColor = "";
-        }
-        document.getElementById(listName).style.display = "block";
-        elmnt.style.backgroundColor = color;
-
-        }
-        // Get the element with id="defaultOpen" and click on it
-        document.getElementById("defaultOpen").click();
-    </script>
 
 </body>
 
